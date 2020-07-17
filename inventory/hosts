@@ -1,3 +1,11 @@
-[lb]
+[aws]
 f51 ansible_host=localhost ansible_user=admin private_ip=ec2-34-228-17-88.compute-1.amazonaws.com ansible_ssh_pass=W3lcome098!
 f52 ansible_host=localhost ansible_user=admin private_ip=ec2-3-87-87-88.compute-1.amazonaws.com ansible_ssh_pass=W3lcome098!
+
+[lb]
+f51 ansible_host=192.168.90.200 ansible_user=admin private_ip=192.168.90.200 ansible_ssh_pass=W3lcome098!
+
+
+[web]
+host1 ansible_host=172.16.170.190 ansible_user=ec2-user private_ip=172.16.170.190
+host2 ansible_host=172.16.170.13  ansible_user=ec2-user private_ip=172.16.160.13

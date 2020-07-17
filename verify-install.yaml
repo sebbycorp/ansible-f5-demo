@@ -1,6 +1,6 @@
 ---
 - name: Verify install
-  hosts: f5
+  hosts: lb
   connection: local
   gather_facts: false
   vars:
