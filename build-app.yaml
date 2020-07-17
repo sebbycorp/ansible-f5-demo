@@ -34,11 +34,12 @@
   
       - name: Create a VIP
         bigip_virtual_server:
+          state: present
           provider: "{{ provider }}"
           destination: "{{vip_ip}}"
           name: "{{vip_name}}"
           pool: "{{pool}}"
-          port: "{{port}}"
+          port: "{{vip_port}}"
           snat: Automap
           profiles:
             - http
