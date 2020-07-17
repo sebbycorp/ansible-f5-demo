@@ -27,7 +27,7 @@
           description: "webserver {{ item.name }}"
           host: "{{ item.host }}"
           pool: "{{pool}}"
-          port: 80
+          port: "{{pool_port}}"
         with_items:
           - host: "{{pool_member_fqdn1}}"
           - host: "{{pool_member_fqdn2}}"
