@@ -16,7 +16,7 @@
         bigip_pool:
           provider: "{{ provider }}"
           lb_method: ratio-member
-          name: "{{pool_name}}"
+          name: "{{pool}}"
           slow_ramp_time: 120
           monitors:
             - "{{monitor}}"
