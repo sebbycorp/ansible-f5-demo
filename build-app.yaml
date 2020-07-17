@@ -1,13 +1,13 @@
 ---
   - name: GRAB F5 FACTS
-    hosts: lb
+    hosts: localhost
     connection: local
     gather_facts: false
     vars:
       provider:
-        server: "{{private_ip}}"
-        user: "{{ansible_user}}"
-        password: "{{ansible_ssh_pass}}"
+        server: "192.168.90.200"
+        user: "admin"
+        password: "W3lcome098!"
         server_port: 443
         validate_certs: false
   
